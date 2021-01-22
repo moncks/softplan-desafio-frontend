@@ -1,24 +1,18 @@
 import React, { useState } from 'react'
 import '../css/BarraBuscarProcesso.css'
 
-const BarraBuscarProcesso = () => {
+const BarraBuscarProcesso = ({ value, ...props }) => {
 
     const [pesquisa, setPesquisa] = useState('')
 
     return (
-        <div class="row" style={{ paddingBottom: '30px' }}>
-            <form>
-                <div class='campobusca'>
-                    <input
-                        name="text"
-                        type="text"
-                        placeholder="Pesquise por uma informação do processo"
-                        value={() => setPesquisa(pesquisa)}
-                    />
-                    <button >BUSCAR</button>
-                </div>
-            </form>
-        </div>
+        <input
+            name="text"
+            type="text"
+            placeholder="Pesquise por uma informação do processo"
+            {...props}
+        />
+
     )
 }
 

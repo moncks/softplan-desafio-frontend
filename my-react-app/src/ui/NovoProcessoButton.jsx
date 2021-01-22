@@ -1,13 +1,11 @@
 import React from 'react'
 import '../css/BarraBuscarProcesso.css'
 
-const NovoProcessoButton = () => {
+const NovoProcessoButton = (value, ...{props}) => {
 
 
     return (
-        <div class="row" style={{ paddingBottom: '30px' }}>
-            <button>NOVO</button>
-        </div>
+            <button {...props}>NOVO</button>
     )
 }
 
