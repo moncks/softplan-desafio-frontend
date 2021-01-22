@@ -1,30 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-
-import BarraBuscarProcesso from './ui/Seach'
 
 ReactDOM.render(
-    <Router history={hashHistory}>
-        <Route path='/' component={App}></Route>
-        <IndexRoute component={BarraBuscarProcesso}></IndexRoute>
-    </Router>
+    <BrowserRouter>
+        <Switch>
+            <Route path='/' exact={true} component={App}></Route>
+        </Switch>
+    </ BrowserRouter>
     ,
     document.getElementById('root')
 );
 
 reportWebVitals();
 
-/*
-O hash serve pra não precisar fazer rendrização
-Na raiz da app vai renderizar o App 
-*/
-
-/*
-<IndexRoute component={BarraBuscarProcesso} />
-Se não tiver nenhuma rota, ele vai carregar um componente automaticamente
-*/
+/*https://medium.com/collabcode/roteamento-no-react-com-os-poderes-do-react-router-v4-fbc191b9937d*/
