@@ -8,7 +8,7 @@ const BarraBuscarProcesso = () => {
     return (
         <div class="row" style={{ paddingBottom: '30px' }}>
             <form>
-                <div>
+                <div class='campobusca'>
                     <input
                         name="text"
                         type="text"

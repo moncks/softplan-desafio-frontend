@@ -5,11 +5,13 @@ import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
+import ExibiBuscaProcesso from './uiExibeBusca/ExibiBuscaProcesso'
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
             <Route path='/' exact={true} component={App}></Route>
+            <Route parth='/buscaProcesso' component={ExibiBuscaProcesso}></Route>
         </Switch>
     </ BrowserRouter>
     ,

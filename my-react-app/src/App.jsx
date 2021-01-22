@@ -6,10 +6,10 @@ import BarraBuscarProcesso from './ui/BarraBuscarProcesso'
 const App = () => {
 
     return (
-      <div className="container" >
-        <h1>Busca de Processos</h1>
+      <div style={{alignItems: 'center'}} className="container" >
+        <h1 style={{textAlign: 'center', margin: '250px 50px 0px 100px'}}>Busca de Processos</h1>
         <BarraBuscarProcesso><h1>teste</h1></BarraBuscarProcesso>
-        <p>Você pode criar um novo processo <Link to='/cadastroNovoProcesso'>clicando aqui</Link>.</p>
+        <p style={{textAlign: 'center', margin: '10px 50px 0px 100px'}}>Você pode criar um novo processo <Link to='/cadastroNovoProcesso'>clicando aqui</Link>.</p>
       </div>
     );
   
