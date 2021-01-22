@@ -6,16 +6,16 @@ const BarraBuscarProcesso = () => {
     const [pesquisa, setPesquisa] = useState('')
 
     return (
-        <div class="row" style={{ paddingBottom: '30px' }} aria-label="Basic example">
-            <form class="form-inline col-6" style={{ marginLeft: '30px', paddingTop: '50px', marginBottom: '10px' }}>
-                <div class="input-group mb-3">
+        <div class="row" style={{ paddingBottom: '30px' }}>
+            <form>
+                <div>
                     <input
                         name="text"
                         type="text"
                         placeholder="Pesquise por uma informação do processo"
                         value={() => setPesquisa(pesquisa)}
                     />
-                    <button >Search</button>
+                    <button >BUSCAR</button>
                 </div>
             </form>
         </div>
