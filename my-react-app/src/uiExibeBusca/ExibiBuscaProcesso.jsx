@@ -8,10 +8,19 @@ const ExibiBuscaProcesso = () => {
 
 
     return (
-        <div className="container" >
+        <div id="exibirBuscaProcesso" >
             <h1 style={{ textAlign: 'left', margin: '50px 50px 0px 10px', width: '5em', wordBreak: 'break-word' }}>Busca de processos</h1>
-            <BarraBuscarProcesso style={{ textAlign: 'left', margin: '0px 0px 0px 80px' }}></BarraBuscarProcesso>
-            {/* <NovoProcessoButton></NovoProcessoButton> */}
+            <BarraBuscarProcesso style={{
+                padding: '18px 10px',
+                alignItems: 'center',
+                borderRadius: '4px',
+                shadowRadius: '1px',
+                border: '1px solid #757575',
+                fontSize: '18px',
+                width: '25%',
+                margin: '0px 0px 0px 120px'
+            }}></BarraBuscarProcesso>
+            <NovoProcessoButton></NovoProcessoButton>
         </div>
     )
 }
