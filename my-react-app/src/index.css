@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*headline*/
+
+h1 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: normal;
+    color: #005b95;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/*title*/
+
+h2 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: normal;
+    color: #9e9e9e 87%;
+}
+
+
+/*subtitle*/
+
+h3 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    color: #9e9e9e 87%;
+}
+
+
+/*body*/
+
+p {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: normal;
+    color: #9e9e9e 54%;
+}
+
+
+/*button label*/
+
+button {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    color: #9e9e9e 38%;
 }

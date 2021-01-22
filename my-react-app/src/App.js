@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import BarraBuscarProcesso from './ui/Seach'
+class App extends Component {
+  render() {
+
+    return (
+
+      <div className="container" >
+        <h1>Busca de Processos</h1>
+        <BarraBuscarProcesso/> { this.props.children}
+        <p>Você pode criar um novo processo clicando aqui</p>
+      </div>
+    );
+  }
 }
 
 export default App;
+
+/*
+ {this.props.children}
+ Quero que todas as rotas que clicar vai ser carregas dentro deste componente
+*/

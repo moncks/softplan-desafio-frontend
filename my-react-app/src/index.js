@@ -3,15 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+
+
+import BarraBuscarProcesso from './ui/Seach'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Router history={hashHistory}>
+        <Route path='/' component={App}></Route>
+        <IndexRoute component={BarraBuscarProcesso}></IndexRoute>
+    </Router>
+    ,
+    document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+/*
+O hash serve pra não precisar fazer rendrização
+Na raiz da app vai renderizar o App 
+*/
+
+/*
+<IndexRoute component={BarraBuscarProcesso} />
+Se não tiver nenhuma rota, ele vai carregar um componente automaticamente
+*/
